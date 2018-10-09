@@ -3,7 +3,8 @@
 def valid_move?(board, index, input)
   if position_taken(board, index)
     return "That position is already taken!"
-  else
+  end 
+end 
 
 
 
