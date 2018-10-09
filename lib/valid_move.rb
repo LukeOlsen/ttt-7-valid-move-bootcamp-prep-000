@@ -3,10 +3,7 @@
 def valid_move?(board, index)
   if (index > 0 && index < 10)
     correct_index = index.to_i - 1
-    if position_taken(board, correct_index)
-      return false
-    else return true
-    end
+    position_taken(board, correct_index)
   else return false
   end
 end
