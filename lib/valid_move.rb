@@ -4,8 +4,8 @@ def valid_move?(board, index)
   if (index > 0 && index < 10)
     correct_index = index.to_i - 1
     if position_taken(board, correct_index)
-      return "That position is already taken!"
-    else board[correct_index] = "X"
+      return false
+    else return true
     end
   end
 end
